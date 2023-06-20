@@ -1,0 +1,153 @@
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+}
+
+body .Todo{
+    /* Home */
+position: absolute;
+width: 1440px;
+height: 5020px;
+left: 0px;
+top: 0px;
+
+/* Preto/05% */
+
+background: #F5F5F5;
+}
+
+.header{
+    /* Topo */
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 32px 0px;
+gap: 611px;
+width: 1136px;
+height: 88px;
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.header img{
+    /* Logo */
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+width: 134px;
+height: 24px;
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+ol, ul,li {
+    list-style: none;
+    justify-content: flex-end;
+    align-self: center;
+    margin: auto;}
+
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+/*Sección Menu*/
+
+section.menu{
+
+}
+
+/*Sección Title*/
+
+section.title{
+
+}
+
+/*Sección About*/
+
+section.about{
+
+}
+
+/*Sección Hobbies*/
+
+section.hobbies{
+    
+}
+
+/* Experiencia Académica*/
+
+section.academic{
+
+}
+
+/* experiencia*/
+
+section.experience{
+
+}
+
+/*Contacto*/
+
+section.formcontato{
+
+}
+
+/*footeer*/
+
+section.footer{
+   
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menú */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sección sobre mi*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+ /*Contacto*/
+
+/*Footer*/
+
+}
