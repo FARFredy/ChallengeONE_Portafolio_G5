@@ -1,111 +1,255 @@
 
-:root{
-    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
-    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #F5F5F5;
-   --cor-de-link: #000;
-}
-
-body .Todo{
-    /* Home */
-position: absolute;
-width: 1440px;
-height: 5020px;
-left: 0px;
-top: 0px;
-
-/* Preto/05% */
-
-background: #F5F5F5;
-}
-
-.header{
-    /* Topo */
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-padding: 32px 0px;
-gap: 611px;
-width: 1136px;
-height: 88px;
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-}
-.header img{
-    /* Logo */
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-gap: 8px;
-width: 134px;
-height: 24px;
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-}
-ol, ul,li {
-    list-style: none;
-    justify-content: flex-end;
-    align-self: center;
-    margin: auto;}
-
-a{
-    text-decoration: none;
-    color: var(--cor-de-link);
-}
-/*Sección Menu*/
-
-section.menu{
+.body  {
+    position: absolute;
+    width: 1440px;
+    height: 5020px;
+    left: 0px;
+    top: 0px;
+    /* Preto/05% */
+    background: #F5F5F5;
 
 }
+.Todo {
+        /* Auto layout */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 32px;
+
+        position: absolute;
+        height: 4796px;
+        left: 0%;
+        right: 0%;
+        top: 0px;
+      }
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding: 32px 0px;
+    gap: 611px;
+    top: 50%;
+    left: 50%;
+    
+    width: 1136px;
+    height: 80px;
+    margin: 50px;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+          
+    .menu__header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            gap: 8px;
+            
+            width: 134px;
+            height: 24px;
+            /* Inside auto layout */
+            flex: none;
+            order: 0;
+            flex-grow: 0;;
+        }
+        
+    .menu__header img {
+            width: 24px;
+            height: 24px;
+            /* Inside auto layout */
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+        
+    .menu__title {
+            /* Fulana de Tal */
+            width: 102px;
+            height: 19px;
+
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            /* identical to box height */
+            /* Preto/100% */
+            color: #464646;
+            /* Inside auto layout */
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+    }
+        
+    .menu__list {
+            /* Links */
+            /* Auto layout */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            gap: 32px;
+
+            width: 653px;
+            height: 19px;
+            /* Inside auto layout */
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+    }
+        
+.menu__list__item {
+            /* Sobre mi */
+            width: 80px;
+            height: 19px;
+
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            /* identical to box height */
+            /* Preto/100% */
+            color: #464646;
+            /* Inside auto layout */
+            flex: none;
+            order: 3;
+            flex-grow: 0;
+    }
+        
+.menu__list__item:hover {
+          background-color:#e1ebfa;
+        }
+        
+.menu__list__item__contato {
+            /* contacto@fulana.com */
+            width: 168px;
+            height: 19px;
+
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            /* identical to box height */
+            /* Preto/100% */
+            color: #464646;
+            /* Inside auto layout */
+            flex: none;
+            order: 5;
+            flex-grow: 0;
+        }
+.menu__list__item__contato:hover{
+            background-color:#e1ebfa;
+          }
 
 /*Sección Title*/
+.title{
+    /* Hero */
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 208px;
 
-section.title{
+    width: 1136px;
+    height: 368px;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.title__div{
+    /* Sobre */
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
 
+    width: 1136px;
+    height: 255px;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.title__profile{
+    /* unsplash:anAAZ0nrqBY */
+    justify-content:right;
+    align-items: center;
+    width: 368px;
+    height: 368px;
+    background: url(.jpg);
+    border-radius: 500px 500px 500px 500px;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
 }
 
 /*Sección About*/
 
-section.about{
+.about{
+    /* Sobre mi */
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px;
+    gap: 10px;
 
+    width: 1440px;
+    height: 383px;
+    /* Azul/10% */
+    background: #EAF2FD;
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
 }
+
 
 /*Sección Hobbies*/
 
-section.hobbies{
-    
+.hobbies{
+    background:#F5F5F5;
+    justify-content: center;
 }
 
 /* Experiencia Académica*/
 
-section.academic{
-
+.academic{
+    justify-content: center;
 }
 
 /* experiencia*/
 
-section.experience{
-
+.experience{
+    background: #EAF2FD;
+    justify-content: center;
 }
 
 /*Contacto*/
 
-section.formcontato{
-
+.formcontato{
+    background: FFFFFF;
+    justify-content: center;
 }
 
 /*footeer*/
 
-section.footer{
-   
+.footer{
+    background: #EAF2FD;
+    justify-content: center;
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
