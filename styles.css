@@ -1,151 +1,161 @@
-
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 .body  {
     position: absolute;
-    width: 1440px;
+    width: 100%;
     height: 5020px;
+    padding: 0;
+    border: 0;
+    margin: 0%;
     left: 0px;
     top: 0px;
     /* Preto/05% */
     background: #F5F5F5;
 
 }
+/* Seccion Todo */
 .Todo {
-        /* Auto layout */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0px;
-        gap: 32px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    background: #e1ebfa;
 
-        position: absolute;
-        height: 4796px;
-        left: 0%;
-        right: 0%;
-        top: 0px;
-      }
+    position: absolute;
+    height: 6000px;
+    left: 10%;
+    right: 10%;
+    top: 10%;
+}
 .menu {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: ;
     align-items: center;
-    padding: 32px 0px;
-    gap: 611px;
-    top: 50%;
-    left: 50%;
-    
+    padding: 60px;
+    margin: 0 60px;
+    text-decoration: none;
+    gap: 280px;
+    background: #e1ebfa;
     width: 1136px;
-    height: 80px;
-    margin: 50px;
+    height: 20px;
+    
     /* Inside auto layout */
     flex: none;
     order: 0;
     flex-grow: 0;
 }
           
-    .menu__header {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding: 0px;
-            gap: 8px;
-            
-            width: 134px;
-            height: 24px;
-            /* Inside auto layout */
-            flex: none;
-            order: 0;
-            flex-grow: 0;;
-        }
+.menu__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    
+    width: 134px;
+    height: 24px;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
         
-    .menu__header img {
-            width: 24px;
-            height: 24px;
-            /* Inside auto layout */
-            flex: none;
-            order: 0;
-            flex-grow: 0;
-        }
+.menu__header img {
+    width: 24px;
+    height: 24px;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
         
-    .menu__title {
-            /* Fulana de Tal */
-            width: 102px;
-            height: 19px;
+.menu__title {
+    /* Fulana de Tal */
+    width: 102px;
+    height: 19px;
 
-            font-family: 'Raleway';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 19px;
-            /* identical to box height */
-            /* Preto/100% */
-            color: #464646;
-            /* Inside auto layout */
-            flex: none;
-            order: 1;
-            flex-grow: 0;
-    }
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    /* Preto/100% */
+    color: #464646;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
         
-    .menu__list {
-            /* Links */
-            /* Auto layout */
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding: 0px;
-            gap: 32px;
+.menu__list {
+    /* Links */
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    text-decoration: none;
 
-            width: 653px;
-            height: 19px;
-            /* Inside auto layout */
-            flex: none;
-            order: 1;
-            flex-grow: 0;
-    }
+    width: 653px;
+    height: 50px;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
         
 .menu__list__item {
-            /* Sobre mi */
-            width: 80px;
-            height: 19px;
+    /* Sobre mi */
+    width: 80px;
+    height: 19px;
 
-            font-family: 'Raleway';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 19px;
-            /* identical to box height */
-            /* Preto/100% */
-            color: #464646;
-            /* Inside auto layout */
-            flex: none;
-            order: 3;
-            flex-grow: 0;
-    }
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    /* Preto/100% */
+    color: #464646;
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
         
 .menu__list__item:hover {
-          background-color:#e1ebfa;
-        }
+    background-color:#e1ebfa;
+}
         
-.menu__list__item__contato {
-            /* contacto@fulana.com */
-            width: 168px;
-            height: 19px;
+.menu__list__item__contacto {
+    /* contacto@fulana.com */
+    width: 168px;
+    height: 19px;
 
-            font-family: 'Raleway';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 19px;
-            /* identical to box height */
-            /* Preto/100% */
-            color: #464646;
-            /* Inside auto layout */
-            flex: none;
-            order: 5;
-            flex-grow: 0;
-        }
-.menu__list__item__contato:hover{
-            background-color:#e1ebfa;
-          }
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    /* Preto/100% */
+    color: #464646;
+    /* Inside auto layout */
+    flex: none;
+    order: 5;
+    flex-grow: 0;
+}
+.menu__list__item__contacto:hover{
+    background-color:#e1ebfa;
+}
 
 /*Sección Title*/
 .title{
@@ -158,8 +168,8 @@
     padding: 0px;
     gap: 208px;
 
-    width: 1136px;
-    height: 368px;
+    width: 100%;
+    height: 460px;
     /* Inside auto layout */
     flex: none;
     order: 1;
@@ -172,10 +182,26 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-    gap: 16px;
+    gap: 24px;
 
-    width: 1136px;
-    height: 255px;
+    width: 751px;
+    height: 246px;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.title__container{
+    /* Auto layout */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 120px;
+    gap: 24px;
+
+    width: 751px;
+    height: 246px;
     /* Inside auto layout */
     flex: none;
     order: 0;
@@ -183,8 +209,6 @@
 }
 .title__profile{
     /* unsplash:anAAZ0nrqBY */
-    justify-content:right;
-    align-items: center;
     width: 368px;
     height: 368px;
     background: url(.jpg);
@@ -194,19 +218,24 @@
     order: 1;
     flex-grow: 0;
 }
+.title__profile {
+    position: absolute;
+    top: 180px;
+    right: 200px;
+    align-items: flex-start;
+  }
 
 /*Sección About*/
-
 .about{
     /* Sobre mi */
     /* Auto layout */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 64px;
-    gap: 10px;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
 
-    width: 1440px;
+    width: 100%;
     height: 383px;
     /* Azul/10% */
     background: #EAF2FD;
@@ -217,39 +246,168 @@
     flex-grow: 0;
 }
 
+/*Sección skills*/
+.skills{
+    /* Skills e hobbies */
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 88px;
+
+    width: 100%;
+    height: 245px;
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+    align-self: stretch;
+    flex-grow: 0;
+}
 
 /*Sección Hobbies*/
-
 .hobbies{
-    background:#F5F5F5;
-    justify-content: center;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 88px;
+
+    width: 100%;
+    height: 160px;
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+    align-self: stretch;
+    flex-grow: 0;
 }
 
 /* Experiencia Académica*/
-
 .academic{
-    justify-content: center;
+    /* Experiencia area */
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 32px;
+
+    width: 100%;
+    height: 450px;
+    /* Azul/10% */
+    background: #EAF2FD;
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
 }
 
 /* experiencia*/
 
 .experience{
-    background: #EAF2FD;
-    justify-content: center;
+    /* Experiencia area */
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+
+    width: 100%;
+    height: 820px;
+    /* Inside auto layout */
+    flex: none;
+    order: 4;
+    flex-grow: 0;
 }
 
 /*Contacto*/
+.formcontacto{
+    /* ContaCto */
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 64px 0px 0px;
+    gap: 16px;
 
-.formcontato{
-    background: FFFFFF;
-    justify-content: center;
+    width: 100%;
+    height: 660px;
+    /* Inside auto layout */
+    flex: none;
+    order: 5;
+    flex-grow: 0;
+}
+.formcontacto--izquierda {
+    width: 464px;
+    height: 593px;
+
+    background: url(.jpg), #EDEDED;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border-radius: 50px;
+}
+.formcontacto__contacto{
+    /* formulario */
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 64px 0px 0px;
+    gap: 16px;
+
+    width: 100%;
+    height: 660px;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
 /*footeer*/
-
-.footer{
-    background: #EAF2FD;
+.footer{ 
+    /* Rodapé */
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: 10px;
+
+    width: 100%;
+    height: 140px;
+    /* Preto/branco */
+    background: #FFFFFF;
+    /* Inside auto layout */
+    flex: none;
+    order: 6;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.footer_rodapie{
+    width: 100%;
+    height: 100px;
+    justify-content: flex-end;
+    align-content:flex-end;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    /* Preto/100% */
+    color: #464646;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
